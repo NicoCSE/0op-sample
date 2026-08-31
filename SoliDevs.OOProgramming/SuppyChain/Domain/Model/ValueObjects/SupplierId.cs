@@ -17,8 +17,6 @@ public readonly record struct SupplierId
     
     public SupplierId(string identifier) => Identifier = identifier;
 
-    public override string ToString()
-    {
-        return base.ToString() => Identifier;
-    }
+    public override string ToString() => Identifier;
 }
+ 

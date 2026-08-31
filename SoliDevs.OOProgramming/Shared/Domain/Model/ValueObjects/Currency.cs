@@ -28,7 +28,7 @@ public readonly record struct Currency
     /// Prevents parameterless construction of <see cref="Currency"/>.
     /// </summary>
     /// <exception cref="InvalidOperationException">Thrown when the currency is initialized with a parameterless constructor.</exception>
-    public Currency() => throw new InvalidOperationException("Currency must be initialized with a valid ISO 4217 alphabetic code.", nameof(Code));
+    public Currency() => throw new InvalidOperationException("Currency must be initialized with a valid ISO 4217 alphabetic code.");
     
     /// <summary>
     /// Initializes a new instance of the <see cref="Currency"/> value object.
